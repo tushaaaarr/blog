@@ -8,307 +8,504 @@
     <script src="https://kit.fontawesome.com/7a600ac64e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="master.css" />
     <link rel="icon" href="favic.png" type="image/gif" sizes="16x16" />
-    <script type="text/javascript" src="master.js" async></script>
+    <!-- <script type="text/javascript" src="master.js" async></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <title>Portfolio Fiverr</title>
+    <!-- <script async>
+      AOS.init();
+    </script> -->
   </head>
-  <body onload="fade()" id="fad">
-    <div id="hero"></div>
-    <div id="hero1"></div>
-    <a href="#fc" type="button" style="z-index: 3" class="btn btn-lg actionbtn px-4 position-fixed bottom-0 end-0 me-2"><i class="fa fa-angle-up"></i></a>
-
-    <!-- NAVBAR CODE START======== -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-none shadow-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand px-2 fw-bold" style="font-size: 30px !important" href="#">ZC</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse lead" id="navbarNav">
-          <ul class="navbar-nav mainav mx-auto mb-lg-0">
-            <li class="nav-item px-3">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#foot">Connect</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#serv">Services</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#wrk">Portfolio</a>
-            </li>
-          </ul>
-          <!-- <ul class="navbar-nav">
-            <li class="nav-item px-3 float-end">
-              <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
-            </li>
-          </ul> -->
-        </div>
+  <body>
+    <div class="pattern">
+      <div class="w-100 text-center text-light py-4" style="background-color: rgba(0, 0, 0, 0.5)">
+        <h4 class="display-5 fw-bold">Projects</h4>
       </div>
-    </nav>
+    </div>
 
-    <!-- NAVBAR CODE END======== -->
+    <div class="bg-dark text-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row g-5 py-5">
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Calories Tracker</h1>
 
-    <!-- HERO/LANDING CODE START======== -->
-    <div class="py-5 py-lg-0 px-lg-5" id="fc">
-      <div class="row align-items-center g-5 pb-5">
-        <div class="col-12 col-lg-11 text-light px-5 px-lg-1 d-flex justify-content-center align-items-center content">
-          <div class="text-center">
-            <h1 class="display-4 fw-bold lh-1 mb-3 text-center">
-              <em><span class="text-dark">Build your next</span> Project.</em>
-            </h1>
-            <p class="lead">We provide an array of software and design solutions.</p>
-            <div class="d-grid gap-2">
-              <a href="#foot"><button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Hire us!</button></a>
+          <div class="col-12" data-aos="fade-up">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner shadow-lg">
+                <div class="carousel-item rounded-3 shadow active">
+                  <img src="cal1.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="..." />
+                </div>
+                <div class="carousel-item rounded-3 shadow">
+                  <img src="cal2.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="..." />
+                </div>
+                <div class="carousel-item rounded-3 shadow">
+                  <img src="cal3.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="..." />
+                </div>
+                <div class="carousel-item rounded-3 shadow">
+                  <img src="cal4.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-        </div>
 
-        <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-none">
-          <!-- <img src="image2.png" class="bottom-0 d-block mx-lg-auto img-fluid float-lg-start circ" alt="heroimg" width="500" height="600" loading="lazy" /> -->
-
-          <ul class="list-unstyled ps-3 socials text-light h4 float-end align-middle d-lg-grid gap-4 d-flex">
-            <li>
-              <a href="https://www.instagram.com/zeb_corp" class="link-light"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/zebcorp76" class="link-light"><i class="fab fa-facebook-square"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/rohit-sharma-3341a9206/" class="link-light"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="https://www.fiverr.com/tusharpatil934" class="link-light link border-0 fw-bold text-decoration-none">fi</a>
-            </li>
-          </ul>
+          <div class="col-lg-12">
+            <p class="lead">
+            Developed a robust calories tracker application enabling users to manage their calorie intake and develop personalized diet plans. Implemented AWS Lambda functions to create serverless API endpoints, leveraging AWS API Gateway for efficient routing. Utilized Python for backend development, incorporating token-based authentication to ensure secure user access. Designed and developed a dynamic, responsive user interface using HTML5, CSS3, and Bootstrap. Enabled users to log daily activities and food intake, offering a premium subscription tier for customized diet plans.
+              </p>
+            <div class="d-flex py-4 text-info fs-5">AWS Lambda, API Gateway, Python, HTML5, Bootstrap, ChartJS</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://calorie-tracker-xi.vercel.app/" target="_blank" type="button" class="btn btn-info btn-lg px-4 me-md-2">
+                Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- HERO/LANDING CODE END======== -->
+    <div class="bg-white text-dark " data-aos="fade-up" style="border-radius: 10px">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row g-5 py-5">
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Archive Manager</h1>
 
-    <!-- ABOUT SECTION START=== -->
-    <div id="About" class="px-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-      <div class="row flex-lg-row align-items-center g-5 pb-5">
-        <div class="col-12 d-none col-sm-8 col-lg-6 d-lg-flex align-items-center">
-          <img src="hero3.jpg" class="bottom-0 d-block mx-lg-auto img-fluid float-start" alt="heroimg" style="height: 500px; width: 500px; object-fit: cover; border-radius: 100%" loading="lazy" />
-        </div>
-        <div class="col-lg-6 text-light">
-          <h1 class="display-5 fw-bold lh-1 mb-3" style="color: #f78e18"><em>About Us</em></h1>
-          <p class="lead">
-            We specialize in leveraging React.js, Python frameworks (including Django, Flask, and FastApi), and PHP Code Igniter to engineer sophisticated digital solutions. Our expertise extends to
-            UI/UX design, seamlessly integrating with AWS Services and exploring the complexities of cloud architecture. Additionally, we delve into Machine Learning and Data Science, employing
-            advanced algorithms for actionable insights. We prioritize security in crafting custom-tailored projects. With a focus on scalable solutions, we bring a tech-savvy touch to full-stack
-            applications, API development, and custom websites.
+          <div class="col-12" data-aos="fade-up">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner shadow-lg">
+                <div class="carousel-item rounded-3 shadow active">
+                  <img src="arch1.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="..." />
+                </div>
+                <div class="carousel-item rounded-3 shadow">
+                  <img src="arch3.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="..." />
+                </div>
+                <div class="carousel-item rounded-3 shadow">
+                  <img src="arch2.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-12 text-dark">
+            <p class="lead">
+              Developed an advanced archive manager providing a suite of services to streamline data retrieval, maintenance, and monitoring, thus enhancing operational efficiency. Integrated comprehensive file handling and access permissions, supporting FTP operations for file download, upload, and deletion on Windows Server. Managed millions of data entries in a PostgreSQL database for sensor instruments across multiple stations, and generated plots and graphs based on timestamped sensor data. Utilized Django for backend development, React.js for the frontend, Node.js for additional server-side logic, and configured Nginx for efficient web server management. Enabled remote desktop protocol (RDP) server for secure access and control.
           </p>
-          <div class="d-grid gap-2 d-flex justify-content-md-start">
-            <a href="https://www.fiverr.com/tusharpatil934" target="_blank" type="button" class="btn btn-lg px-4 actionbtn"> See Gigs </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ABOUT SECTION END=== -->
 
-    <!-- SERVICES SECTION START==== -->
-    <div id="serv" class="p-lg-5 p-1" style="background: linear-gradient(0deg, rgba(249, 172, 64, 1) 0%, rgba(247, 142, 24, 1) 100%)">
-      <p class="lead pt-5 pb-0 mb-0 fw-bold" style="color: rgba(19, 25, 39, 1)">What we offer?</p>
-      <h1 class="pb-5 mt-0 fw-bold text-light"><em>Our Services</em></h1>
-
-      <div class="row g-5 pb-5">
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fas fa-bezier-curve"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Web Design</h4>
-              <p class="card-text lead">
-                Crafting visually stunning static webpages with HTML5, CSS3, Bootstrap, JavaScript, React.js, and seamless database connectivity for an elevated online presence.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fas fa-code"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Web Development</h4>
-              <p class="card-text lead">
-                Building fully functional websites from front to backend, featuring dynamic development with React.js, Python frameworks, PHP frameworks, and AWS integration.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fas fa-ruler-combined"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">UI/UX & Graphic Design</h4>
-              <p class="card-text lead">Design User Interfaces/Experiences prototytpes, and creating custom graphic assets for your personal and official use using Photoshop, Illustrator.</p>
+            <div class="d-flex py-4 text-info fs-5">React, Django, Node, ChartJS, PostgreSQL, Nginx, RDP</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://archive-manager.vercel.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- SERVICES SECTION END=== -->
 
-    <!-- WORK SECTION=== START-->
-    <div id="wrk" class="p-lg-5 p-2" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-      <p class="lead pt-5 pb-0 mb-0 fw-bold text-end" style="color: #f78e18">Full Stack, Graphics design and other</p>
-      <h1 class="pb-5 mt-0 fw-bold text-light text-end"><em>Recent Works</em></h1>
+    <div class="bg-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-row align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">CarbonTrack</h1>
+            <p class="lead">
+              Introducing CarbonTrack, your personal carbon emissions tracker. Easily input your monthly and yearly activities, from transportation to energy usage and diet. CarbonTrack provides
+              comprehensive analysis, breaking down emissions by category and presenting data through intuitive charts and graphs. Set customizable reduction goals and receive insightful tips for
+              greener living. With CarbonTrack, monitoring and managing your carbon footprint is simple and secure.
+            </p>
 
-      <div class="row g-5 pb-5">
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="mm.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">Mymenyu ( <a href="https://mymenyu.com/" target="_blank" class="text-info link fs-5">Visit </a> )</h4>
-              <p class="card-text lead">Mymenyu.com is a trailblazing brand dedicated to revolutionizing the way restaurants connect with their customers through customized menus.</p>
-            </div>
+            <div class="d-flex py-4 text-info fs-5">React, Django, MySQL</div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="carbon.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
         </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="gg.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">FLIP GIFT ( <a href="https://www.generator.flippcadeau.nl/" target="_blank" class="text-info link fs-5">Visit </a> )</h4>
-              <p class="card-text lead">Created for college, where students can take quizez created by there respective professors using admin dashboard.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="critiq.png" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">CRITIQ ( <a href="https://critiq.se/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">Music Focused social web based app. Social media for music critiqs and enjoyers.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="lm.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">LendMe( <a href="https://lend-me-p2p.netlify.app/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">
-                Developed a P2P Lending & Borrowing fintech solution, LendMe. Streamlining the borrowing process while optimising returns for users with dynamic agreement generation, in-app wallet &
-                payment gateway integration.
-              </p>
-              <p class="card-text text-info pb-1 mb-0 mt-2">React, Node, PostgreSql, Puppeteer, Github actions, Razorpay</p>
-              <p class="card-text text-info pt-1">Project Artefacts: PRD | UX Wireframes | Frontend | Backend</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="reactcommerce.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">Fashionhub ( <a href="https://react-commerce-sage.vercel.app/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">A merchandise based e-store created for a college grad.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="bp.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">BlogPro ( <a href="https://blogpro-sooty.vercel.app/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">A file collecting, blog creating and sharing platfomr for a HPU affliated college.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="mv.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">Medvise.ai</h4>
-              <p class="card-text lead">
-                Medvise is an innovative platform designed to foster seamless collaboration between doctors and patients, revolutionizing the way they interact and engage in healthcare.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="mym.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">Mymovies</h4>
-              <p class="card-text lead">MyMovies is a cutting-edge platform that puts users in control of their movie and TV show watching experience.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="s3.jpeg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">S3 Enhanced data visiualization</h4>
-              <p class="card-text lead">Interactive data visiualization wiht advanced searching and sorting.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="uiux.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">UI/UX work.</h4>
-              <p class="card-text lead">In contract with neuxm a social paltform collaborated to create UI/UX for the company.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="lps.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">Landing pages and much more. ( <a href="https://go.lpcinvest.com/property/westminster_park" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">In contract with a real estate company from 2023-2024 crated multiple designs like landing pages, blogs animations etc..</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="gds.png" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">Graphic Design Work ( <a href="https://www.instagram.com/zeb_corp/" target="_blank" class="text-info link fs-5 border-0">See More </a> )</h4>
-              <p class="card-text lead">From past three year as a freelancer a lot of graphic design work created using Illustrator, Photoshop, Adobe Animate etc.</p>
-            </div>
-          </div>
-        </div>
-        <a href="projects.html" class="text-center">
-          <button type="button" class="btn-lg px-4 actionbtn">More <i class="fas fa-angle-right"></i></button>
-        </a>
       </div>
     </div>
-    <!-- WORK SECTION END END-->
+
+    <div class="bg-white" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">LendMe</h1>
+            <p class="lead">
+              Developed a P2P Lending & Borrowing fintech solution, LendMe. Streamlining the borrowing process while optimising returns for users with dynamic agreement generation, in-app wallet &
+              payment gateway integration.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Node, PostgreSql, Puppeteer, Github actions, Razorpay</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://lend-me-p2p.netlify.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="lm.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-lg-6">
+            <img src="gg.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Flip Gift</h1>
+            <p class="lead">
+              An innovative gift-generating platform, Flip Cadeau Generator streamlines personalized gift searches with an intuitive interface. Users effortlessly explore curated selections, utilizing
+              advanced filters based on occasion and preferences. The dynamic backend ensures continual gift catalog expansion, while direct purchase links optimize the e-commerce journey. Flip Cadeau
+              Generator: tech-savvy, personalized gifting redefined.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">Django, MySQL</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://www.generator.flippcadeau.nl/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-light">
+        <div class="row g-5 py-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <h1 class="display-5 fw-bold lh-1 mb-4 text-center">Art Merch Store</h1>
+            <img src="artstore.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="100%" />
+          </div>
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="100">
+            <p class="lead">
+              Developed a small e-merch store for and idependent artist probiding him the platform to sell his print media, posters, apparels etc. App uses email js to directly send the order to the
+              seller mail from there onward the seller can handle the user data and reuest using there CRM.
+            </p>
+
+            <div class="py-4 text-info fs-5 text-center">React, EmailJs, PHP, MySQL</div>
+            <!-- <div class="d-grid gap-2 d-md-flex">
+              <a href="https://lend-me-p2p.netlify.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white " data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">RehabLoop</h1>
+            <p class="lead">
+              With RehabLoop, agents and companies can efficiently list properties for sale, attract interested buyers, and facilitate seamless transactions, all in one convenient platform. Join
+              EstateLister today and revolutionize the way you sell properties.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Django, MySQL</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://main.d1eqcgh0d7v0dg.amplifyapp.com/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="proplist.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" style="object-fit: cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-lg-6">
+            <img src="gh.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Github Metrics</h1>
+            <p class="lead">
+              Developed a streamlined GitHub metrics dashboard integrating custom analytics for efficient project management. Implemented summarized statistics widgets for issues, pull requests (PRs),
+              and workflows with interactive stats cards. Utilized GitHub API to achieve seamless integration and data visualization.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Django, MySQL</div>
+            <!-- <div class="d-grid gap-2 d-md-flex">
+              <a href="https://lend-me-p2p.netlify.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Mymovies</h1>
+            <p class="lead">
+              MyMovies- Cutting-edge platform that puts users in control of their movie and TV show watching experience. enabling users to seamlessly manage their movie and show preferences, curate
+              personalized watchlists, and receive timely notifications about the latest releases
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Django, MySQL</div>
+            <!-- <div class="d-grid gap-2 d-md-flex ">
+              <a href="https://www.generator.flippcadeau.nl/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+              ></a>
+            </div> -->
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="mym.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" style="object-fit: cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-lg-6">
+            <img src="critiq.png" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Music Rating app</h1>
+            <p class="lead">
+              Critiq is a dynamic music-focused social web application that transforms the way users engage with and discover music. With features like song commenting, rating, personalized feeds,
+              music sharing, and user activities, Critiq creates a vibrant community for music enthusiasts. The seamless integration of Spotify through the Spotify API enhances the user experience,
+              providing access to a vast music library.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Django, Django DRF, PostgreSQL</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://critiq.se/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Fashionhub</h1>
+            <p class="lead">A merchandise based e-store created for a college grad. The project is a small scale e-commerce or merch store with all the fetures of a online merch store.</p>
+
+            <div class="d-flex py-4 text-info fs-5">React, PHP, MySQL</div>
+            <div class="d-grid gap-2 d-md-flex ">
+              <a href="https://react-commerce-sage.vercel.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="reactcommerce.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-lg-6">
+            <img src="mm.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">MyMenyu</h1>
+            <p class="lead">Mymenyu.com is a trailblazing brand dedicated to revolutionizing the way restaurants connect with their customers through customized menus.</p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Django, Django DRF, PostgreSQL</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://mymenyu.com/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">BlogPro</h1>
+            <p class="lead">A file collecting, blog creating and sharing platfomr for a HPU affliated college.</p>
+
+            <div class="d-flex py-4 text-info fs-5">React, PHP, MySQL</div>
+            <div class="d-grid gap-2 d-md-flex ">
+              <a href="https://blogpro-sooty.vercel.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="bp.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-lg-6">
+            <img src="th.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Twitter hate prediction</h1>
+            <p class="lead">
+              Predict Twitter hate with a Random Forest machine learning algorithm, utilizing real-time Twitter data through Twitter APIs. This project employs advanced machine learning techniques to
+              identify and predict instances of hate speech on the platform. The use of Random Forest enhances accuracy in discerning patterns within the dynamic landscape of social media
+              conversations, contributing to a safer online environment.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">Html4, Bootstrap4, JavsScript ,Flask, Twitter API's, ML - Random Forest, Linear Regression, Heroku</div>
+            <!-- <div class="d-grid gap-2 d-md-flex">
+              <a href="https://mymenyu.com/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Landing pages and much more</h1>
+            <p class="lead">In contract with a real estate company from 2023-2024 crated multiple designs like landing pages, blogs animations etc.</p>
+
+            <div class="d-flex py-4 text-info fs-5">HTML, CSS, Bootstrap, JavaScript, Django, Flask, Mysql, S3 Storage</div>
+            <div class="d-grid gap-2 d-md-flex ">
+              <a href="https://go.lpcinvest.com/property/westminster_park" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="lps.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12">
+            <h1 class="display-5 fw-bold lh-1 mb-3">LPC Invest</h1>
+            <div class="shadow-lg p-2 rounded">
+              <iframe
+                width="100%"
+                height="720"
+                src="https://www.youtube.com/embed/7K7EjAGa_rw"
+                title="LPCINVEST"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="lead">
+              Comprehensive property listing website equipped with essential features such as property listing, detailed pages, real-time updates, advanced search and sorting capabilities, and dynamic
+              blogs/articles. The integrated user profile section includes login, registration, profile management, favorite properties, and easy sharing options. A customized dashboard allows users
+              to track paid ad leads efficiently. Furthermore, the integration of third-party APIs enhances the system's functionality, including seamless CRM operations and Google Maps APIs for
+              location services.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">HTML, CSS, Bootstrap, JavaScript, Django, Flask, Mysql, S3 Storage</div>
+            <!-- <div class="d-grid gap-2 d-md-flex">
+              <a href="https://mymenyu.com/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div> -->
+          </div>
+
+          <div class="col-12">
+            <div class="row">
+              <h2 class="display-6 fw-bold lh-1 mb-3">Landing Pages</h2>
+              <div class="col-lg-6 col-12">
+                <div class="card">
+                  <img src="lps.jpg" class="card-img-top" style="width: 100%; max-height: 300px" alt="..." />
+                  <div class="card-body">
+                    <a href="https://go.lpcinvest.com/property/westminster_park" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                      Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="card">
+                  <img src="lps2.jpg" class="card-img-top" style="width: 100%; max-height: 300px" alt="..." />
+                  <div class="card-body">
+                    <a href="https://ads.lpcinvest.com/lpc-invest-waterloo-house" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                      Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-4">
+                <div class="card">
+                  <img src="lps3.jpg" class="card-img-top" style="width: 100%" alt="..." />
+                  <div class="card-body">
+                    <a href="https://ads.lpcinvest.com/lpc-invest-trafford-bar-apartments" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                      Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
 
     <!-- Footer/Connect section -->
+    <div class="pattern">
+      <div id="foot" class="p-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%)">
+        <h1 class="display-3 pb-5 mt-0 fw-bold text-center" style="color: #f78e18"><em>Contact</em></h1>
 
-    <div id="foot" class="p-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(0, 0, 0, 1) 100%)">
-      <h1 class="display-3 pb-5 mt-0 fw-bold text-center" style="color: #f78e18"><em>Contact</em></h1>
+        <h4 class="fw-light text-light">If you like our work and already have a project in mind, please use the contacts below to request a quote or simply say “Hello!”.</h4>
+        <h3 class="text-light pt-5 pb-2">Email: <a href="mailto:zebcorp76@gmail.com" class="link-light"> tusharspatil808@gmail.com</a></h3>
+        <h3 class="text-light pb-5">linkedin: <a href="https://www.linkedin.com/in/tushar-patil-087a81194/" class="link-light">Check out our Gigs</a></h3>
+        <!-- <h3 class="text-light pb-5">Instagram: <a href="https://www.instagram.com/zeb_corp/" class="link-light">zeb_corp</a></h3> -->
 
-      <h4 class="fw-light text-light">If you like my work and already have a project in mind, please use the contacts below to request a quote or simply say “Hello!”.</h4>
-      <h3 class="text-light pt-5 pb-2">Email: <a href="mailto:zebcorp76@gmail.com" class="link-light"> zebcorp76@gmail.com</a></h3>
-      <h3 class="text-light pb-5">Fiverr: <a href="https://www.fiverr.com/tusharpatil934" class="link-light">Check out our Gigs</a></h3>
-      <!-- <h3 class="text-light pb-5">Instagram: <a href="https://www.instagram.com/zeb_corp/" class="link-light">zeb_corp</a></h3> -->
-
-      <p class="text-dark pt-5">©2019-2024.</p>
+        <p class="text-secondary pt-5">©2019-2024.</p>
+      </div>
     </div>
-
     <!-- Footer/Connect section End -->
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
